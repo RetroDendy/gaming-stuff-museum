@@ -287,28 +287,6 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
-body {
-  background-color: #1e1e24 !important;
-  color: #f0f0f2 !important;
-}
-a {
-  color: #64b5f6 !important;
-}
-.site-avatar, .site-info, .site-header, .wrapper-footer, .container {
-  background-color: #1e1e24 !important;
-}
-p, li, h1, h2, h3, h4 {
-  color: #dbdbdb !important;
-}
-.page-content,
-.wrapper,
-.post-content,
-.site-nav,
-.trigger,
-.site-footer {
-  background-color: #1e1e24 !important;
-  color: #f0f0f2 !important;
-}
 /* Graphite theme */
 html,
 body {
@@ -321,7 +299,16 @@ body {
 .container,
 .posts,
 .post,
-.entry {
+.entry,
+.site-avatar,
+.site-info,
+.site-header,
+.page-content,
+.wrapper,
+.post-content,
+.site-nav,
+.trigger,
+.site-footer {
   background: #1e1e24 !important;
   color: #f0f0f2 !important;
 }
@@ -340,5 +327,7 @@ a {
 }
 
 a:hover {
+  color: #9fd3ff !important;
+}
   color: #9fd3ff !important;
 }
