@@ -309,3 +309,36 @@ p, li, h1, h2, h3, h4 {
   background-color: #1e1e24 !important;
   color: #f0f0f2 !important;
 }
+/* Graphite theme */
+html,
+body {
+  background: #1e1e24 !important;
+  color: #f0f0f2 !important;
+}
+
+.wrapper-masthead,
+.wrapper-footer,
+.container,
+.posts,
+.post,
+.entry {
+  background: #1e1e24 !important;
+  color: #f0f0f2 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  color: #dbdbdb !important;
+}
+
+a {
+  color: #64b5f6 !important;
+}
+
+a:hover {
+  color: #9fd3ff !important;
+}
