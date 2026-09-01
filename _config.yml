@@ -79,13 +79,16 @@ gems:
 
 # Exclude these files from your production _site
 exclude:
-remote_theme: jekyll/minima
-plugins:
-  - jekyll-remote-theme
-minima:
-  skin: dark
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
   - CNAME
+
+remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-remote-theme
+
+minima:
+  skin: dark
