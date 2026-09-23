@@ -214,3 +214,153 @@ nav a:hover {
   background: var(--image);
   border-bottom: 1px solid var(--line);
 }
+.exhibit-page {
+  padding: 34px 0 92px;
+}
+
+.breadcrumbs {
+  margin: 0 0 40px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--accent);
+}
+
+.exhibit-intro {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: end;
+  padding-bottom: 68px;
+  border-bottom: 1px solid var(--line);
+}
+
+.exhibit-main-image {
+  display: block;
+  width: 100%;
+  min-height: 430px;
+  max-height: 620px;
+  object-fit: cover;
+  background: var(--image);
+}
+
+.exhibit-details {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 56px;
+  padding: 60px 0 72px;
+  border-bottom: 1px solid var(--line);
+}
+
+.facts {
+  display: grid;
+  gap: 18px;
+}
+
+.facts div {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.facts span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.facts strong {
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+.exhibit-text h2 {
+  margin-bottom: 22px;
+}
+
+.exhibit-text p {
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.exhibit-gallery {
+  padding-top: 62px;
+}
+
+.exhibit-gallery h2 {
+  margin-bottom: 28px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.gallery-item {
+  margin: 0;
+}
+
+.gallery-item-wide {
+  grid-column: 1 / -1;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--image);
+}
+
+.gallery-item-wide img {
+  aspect-ratio: 16 / 9;
+}
+
+.gallery-item figcaption {
+  padding-top: 8px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 760px) {
+  .exhibit-intro,
+  .exhibit-details {
+    display: block;
+  }
+
+  .exhibit-main-image {
+    min-height: 310px;
+    margin-top: 32px;
+  }
+
+  .exhibit-details {
+    padding: 44px 0 54px;
+  }
+
+  .exhibit-text {
+    margin-top: 40px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item-wide {
+    grid-column: auto;
+  }
+
+  .gallery-item-wide img {
+    aspect-ratio: 4 / 3;
+  }
+}
