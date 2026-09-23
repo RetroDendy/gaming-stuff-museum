@@ -1,18 +1,110 @@
----
-layout: default
----
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaming Stuff Museum — частная коллекция</title>
+  <meta name="description" content="Частная коллекция игровых консолей, носителей и игровой техники.">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-name" href="./">GAMING STUFF MUSEUM</a>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="#collection">Коллекция</a>
+        <a href="#about">О проекте</a>
+      </nav>
+    </div>
+  </header>
 
-      <div class="entry">
-        {{ post.excerpt }}
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Частная коллекция</p>
+
+          <h1>Игровая техника,<br>у которой есть история.</h1>
+
+          <p class="intro">
+            Консоли, картриджи, периферия и другие предметы
+            домашней игровой культуры 1980-х—2000-х годов.
+          </p>
+
+          <a class="button" href="#collection">Смотреть коллекцию</a>
+        </div>
+
+        <div class="hero-placeholder" aria-label="Место для главной фотографии коллекции">
+          <span>Здесь будет фотография коллекции</span>
+        </div>
       </div>
+    </section>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <section class="collection" id="collection">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Первые экспонаты</p>
+          <h2>Коллекция</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-image">Фото экспоната</div>
+            <div class="card-text">
+              <h3>Название консоли</h3>
+              <p>Производитель · год · поколение</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">Фото экспоната</div>
+            <div class="card-text">
+              <h3>Название консоли</h3>
+              <p>Производитель · год · поколение</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">Фото экспоната</div>
+            <div class="card-text">
+              <h3>Название консоли</h3>
+              <p>Производитель · год · поколение</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">Фото экспоната</div>
+            <div class="card-text">
+              <h3>Название консоли</h3>
+              <p>Производитель · год · поколение</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <p class="eyebrow">О проекте</p>
+
+        <div>
+          <h2>Не магазин и не энциклопедия.</h2>
+          <p>
+            Это независимый некоммерческий архив предметов из частной
+            коллекции: игровых систем, носителей, аксессуаров и следов
+            повседневной игровой культуры.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Gaming Stuff Museum · независимый частный архив</p>
+    </div>
+  </footer>
+</body>
+</html>
